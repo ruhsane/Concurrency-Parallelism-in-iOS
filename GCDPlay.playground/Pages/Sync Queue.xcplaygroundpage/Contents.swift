@@ -2,7 +2,7 @@ import Foundation
 
 let queue = DispatchQueue(label: "com.makeschool.queue")
 
-queue.async {
+queue.sync {
     for i in 0..<10 {
         print("🍎 ", i)
     }
